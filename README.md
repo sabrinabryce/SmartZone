@@ -83,7 +83,7 @@ Reboot system.
 
 ## Architecture
 
-The system is as follows:
+The system architecture is as follows:
 
 Sensors → Control Logic → Actuators → Web Interface → Logging
 
