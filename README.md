@@ -3,7 +3,7 @@ SmartZone: Occupancy-based HVAC and lighting system designed for energy-saving (
 
 ## Overview
 
-SmartZone integrates:
+SmartZone integrates
 
 - Occupancy detection
 - Ambient light sensing
@@ -29,7 +29,7 @@ Cooling:
 - Turns ON when room is occupied AND temperature is above cool setpoint.
 
 Safety:
-- Heating and cooling never run simultaneously.
+- Heating and cooling never run simultaneously. Manual overrides are provided. 
 
 ---
 
@@ -58,16 +58,14 @@ config.py     → Thresholds and calibration
 
 ## Calibration
 
-To recalibrate in a new room:
-
-Open shell and run:
+To recalibrate in a new room open shell and run
 
     import test
     test.run()
 
 Observe raw light, temperature, and occupancy values.
 
-Then adjust:
+Then adjust
 
 - BRIGHT_RAW
 - DARK_RAW
