@@ -10,7 +10,7 @@ _log_filename = None
 
 
 # -----------------------------
-# Create New Log File Per Boot
+# Create New Log File Per Run
 # -----------------------------
 def _create_new_log():
 
@@ -35,7 +35,7 @@ def _create_new_log():
 
 
 # -----------------------------
-# Public Logging Function
+# Logging Function
 # -----------------------------
 def log_state(state):
 
@@ -67,4 +67,5 @@ def log_state(state):
             f.write(log_line)
 
         print("Logged at", current_time)
+
 
