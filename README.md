@@ -1,17 +1,28 @@
 # SmartZone
-SmartZone: Occupancy-based HVAC and lighting system designed for energy-saving (UVic ENGR 120 Design Project).
+SmartZone: Occupancy-based HVAC and lighting automation system built on a Raspberry Pi Pico W.
 
-## Overview
+Developed for UVic ENGR 120 Design Project
 
-SmartZone integrates
+## System Overview
 
-- Occupancy detection
-- Ambient light sensing
-- Temperature sensing
-- Automated heating
-- Automated cooling
-- Automated lighting
-- Web-based monitoring interface
+SmartZone demonstrates automatic control of building zones using sensor data. 
+
+Sesors include the following: 
+
+- IR Beam-Break Occupancy Detector
+- Ambient Light Sensor
+- Temperature (Thermistor) 
+
+Based on these inputs, SmartZone controls the following: 
+
+- Lighting
+- Heating
+- Cooling
+
+The web dashboard allows users to 
+- Monitor live zone status
+- Apply manual overrides
+- Visualize zone occupancy 
 
 The system is designed for multi-zone scalability.
 
@@ -35,47 +46,36 @@ Safety:
 
 ## File Structure
 
-main.py       → System entry point  
+main.py       → System entry point and menu
 control.py    → Core HVAC + lighting logic  
 sensors.py    → Sensor readings  
 actuators.py  → Output control  
 wifi.py       → Access point + server  
 web.py        → Web dashboard rendering  
 log.py        → System state logging  
-test.py       → Calibration utility  
-config.py     → Thresholds and calibration  
+test.py       → Calibration tool  
+config.py     → Thresholds and calibration values
 
 ---
 
 ## How To Run
 
-1. Power device.
-2. Connect to SmartZone WiFi access point.
-3. Open browser to device IP address.
-4. Dashboard updates automatically every 1 second.
+Start the system by running: main.py 
+
+You will see the SmartZone menu: 
+1: Run the system → Starts full system
+2: Run debug mode → Runs system without logging and prints live data
+3: Run testing → Runs sensor calibration tool (to update config.py) 
 
 ---
 
-## Calibration
+## Conecting to the Web Dashboard 
 
-To recalibrate in a new room open shell and run
-
-    import test
-    test.run()
-
-Observe raw light, temperature, and occupancy values.
-
-Then adjust
-
-- BRIGHT_RAW
-- DARK_RAW
-- OCC_THRESHOLD
-- HEAT_SETPOINT
-- COOL_SETPOINT
-
-in config.py.
-
-Reboot system.
+1. Power the device.
+2. Connect to SmartZone WiFi access point: SMARTZONE_PICO.
+3. Enter the WiFi password.
+4. Open browser to device IP address (shown in console).
+5. Enter the interface password.
 
 ---
 
