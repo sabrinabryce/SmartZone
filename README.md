@@ -46,7 +46,7 @@ Safety:
 
 ## File Structure
 
-main.py       → System entry point and menu
+main.py       → System entry point and menu 
 control.py    → Core HVAC + lighting logic  
 sensors.py    → Sensor readings  
 actuators.py  → Output control  
