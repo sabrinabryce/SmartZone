@@ -133,6 +133,8 @@ test.py       → Calibration tool
 
 config.py     → Thresholds and calibration values
 
+The control flow is:  
+
 Sensors → Control Logic → Actuators → Web Interface → Logging
 
 ---
