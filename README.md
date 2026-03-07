@@ -1,5 +1,5 @@
 # SmartZone
-SmartZone: Occupancy-based HVAC and lighting automation system built on a Raspberry Pi Pico W.
+SmartZone is an occupancy-based HVAC and lighting automation system built on a Raspberry Pi Pico W.
 
 Developed for UVic ENGR 120 Design Project
 
