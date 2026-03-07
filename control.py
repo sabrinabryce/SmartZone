@@ -4,7 +4,7 @@ from actuators import *
 from config import *
 
 # -------------------------------------------------
-# GLOBAL STATE (PERSISTENT)
+# GLOBAL STATE 
 # -------------------------------------------------
 state = {
     "occupied": False,
@@ -57,11 +57,12 @@ def update_system():
         )
 
     # -------------------------------------------------
-    # APPLY ACTUATORS (SINGLE SOURCE OF TRUTH)
+    # APPLY ACTUATORS (1 SOURCE)
     # -------------------------------------------------
     lighting(state["lighting_on"])
     heating(state["heating_on"])
     cooling(state["cooling_on"])
 
     return state
+
 
