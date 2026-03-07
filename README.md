@@ -70,7 +70,9 @@ The SmartZone menu will appear:
 
 
 1: Run the system
+
 2: Run debug mode
+
 3: Run testing
 
 
@@ -114,13 +116,21 @@ This tool measures environmental values and provides recommended configuration v
 ## File Structure
 
 main.py       → System entry point and menu 
-control.py    → Core HVAC + lighting logic  
+
+control.py    → Core HVAC + lighting logic 
+
 sensors.py    → Sensor readings  
+
 actuators.py  → Output control  
+
 wifi.py       → Access point + server  
+
 web.py        → Web dashboard rendering  
+
 log.py        → System state logging  
+
 test.py       → Calibration tool  
+
 config.py     → Thresholds and calibration values
 
 Sensors → Control Logic → Actuators → Web Interface → Logging
