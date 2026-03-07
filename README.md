@@ -7,7 +7,7 @@ Developed for UVic ENGR 120 Design Project
 
 SmartZone demonstrates automatic control of building zones using sensor data. 
 
-Sesors include the following: 
+Sensors include the following: 
 
 - IR Beam-Break Occupancy Detector
 - Ambient Light Sensor
