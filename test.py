@@ -6,10 +6,6 @@ Run in shell:
 import test
 test.run()
 """
-"""
-SmartZone Light Calibration Tool
-"""
-
 import utime
 from machine import ADC
 from config import PIN_LIGHT, PIN_OCCUPANCY
@@ -121,4 +117,5 @@ def run():
     print("\nReference values:")
     print("FLASH_LIGHT =", flash)
     print("UNOCCUPIED =", empty)
+
     print("OCCUPIED =", occupied)
